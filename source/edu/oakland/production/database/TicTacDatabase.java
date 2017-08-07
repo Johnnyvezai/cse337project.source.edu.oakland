@@ -22,7 +22,7 @@ public class TicTacDatabase{
 	
 	}
 	
-	public Gameboard getBoardStatus(){
+	public char[][] getBoardStatus(){
 		return board;
 	
 	}
