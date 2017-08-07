@@ -10,7 +10,7 @@ public class Database{
 	
 	}
 	
-	public void printBoardStatus(){
+	public void getBoardStatus(){
 	
 	}
 	
