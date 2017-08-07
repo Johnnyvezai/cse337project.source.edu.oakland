@@ -22,8 +22,8 @@ public class TicTacDatabase{
 	
 	}
 	
-	public void getBoardStatus(){
-		gameboard.getBoard();
+	public Gameboard getBoardStatus(){
+		return board;
 	
 	}
 	
