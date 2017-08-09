@@ -5,7 +5,7 @@ import edu.oakland.helper.database.*;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class TicTacDBTest{
+public class TTTDBTest{
 	
     private int rowNumber = 0;
     private int colNumber = 1;
@@ -17,7 +17,7 @@ public class TicTacDBTest{
     public void initializeSystem(){
         Gameboard gameboard = new Gameboard();
         gameboard.initializeBoard();
-        database = new TicTacDatabase(rowNumber, colNumber, markChar, gameboard);
+        database = new TTTDatabase(rowNumber, colNumber, markChar, gameboard);
         database.writeToBoard(rowNumber, colNumber, markChar);
 		
     }
