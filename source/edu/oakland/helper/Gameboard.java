@@ -1,4 +1,4 @@
-package edu.oakland.helper.database;
+package edu.oakland.helper;
 
 public class Gameboard{
 	private char[][] board;
