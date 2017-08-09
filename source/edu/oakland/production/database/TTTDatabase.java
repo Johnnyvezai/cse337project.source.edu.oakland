@@ -7,7 +7,7 @@ public class TTTDatabase{
 		board = new char[][]{{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
 	}
 	
-	public writeToBoard(int row, int col, char mark){
+	public void writeToBoard(int row, int col, char mark){
 		board[row][col] = mark;
 	}
 	
