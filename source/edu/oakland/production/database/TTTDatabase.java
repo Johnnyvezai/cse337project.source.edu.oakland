@@ -1,6 +1,6 @@
 package edu.oakland.production.database;
 
-import edu.oakland.helper.database.*;
+import edu.oakland.helper.*;
 
 public class TTTDatabase{
 	private Gameboard gameboard;
