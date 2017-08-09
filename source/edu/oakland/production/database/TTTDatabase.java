@@ -1,34 +1,21 @@
 package edu.oakland.production.database;
 
-import edu.oakland.helper.*;
-
-public class TTTDatabase{
-	private Gameboard gameboard;
-	private int rowNumber, colNumber;
-	private char markChar;
+public class TTTDatabase{	
 	private char[][] board;
 	
-	public TTTDatabase(int rowNumber, int colNumber, char markChar, Gameboard gameboard){
-		this.rowNumber = rowNumber;
-		this.colNumber = colNumber;
-		this.markChar = markChar;
-		this.gameboard = gameboard;
-		board = gameboard.getBoard();
-		
+	public TTTDatabase(){
+		board = new char[][]{{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
 	}
 	
-	public void writeToBoard(int row, int col, char mark){
-		board[row][col] = markChar;
-	
+	public writeToBoard(int row, int col, char mark){
+		board[row][col] = mark;
 	}
 	
 	public char[][] getBoardStatus(){
 		return board;
-	
 	}
 	
 	public char getCellValues(int row, int col){
 		return board[row][col];
-	
 	}
 }
